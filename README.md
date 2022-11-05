@@ -1,1 +1,1 @@
-# ctf-pwn
+# pwn
