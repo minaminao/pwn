@@ -1,0 +1,12 @@
+_*
+
+.DS_Store
+
+.gdb_history
+peda-session-*
+core
+
+*.zip
+
+attachment
+payload.bin
