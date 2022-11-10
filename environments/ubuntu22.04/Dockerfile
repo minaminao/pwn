@@ -19,20 +19,27 @@ RUN apt install -y \
     netcat \
     sudo \
     wget
+RUN apt install -y \
+    tmux \
+    tree
 
 RUN useradd -m pwn && echo "pwn:pwn" | chpasswd && adduser pwn sudo
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER pwn
 WORKDIR /home/pwn
 
-# https://github.com/hugsy/gef/issues/195 TODO
-ENV LC_CTYPE C.UTF-8
-RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
-
 RUN git clone --depth 1 https://github.com/radare/radare2.git ~/radare2
 RUN ~/radare2/sys/install.sh
+
+# https://github.com/hugsy/gef/issues/195 TODO
+ENV LC_CTYPE C.UTF-8
+# bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+RUN bash -c "$(curl -fsS https://raw.githubusercontent.com/hugsy/gef/dev/scripts/gef.sh)" _ dev
 
 RUN pip install pwntools
 ENV PATH /home/pwn/.local/bin:$PATH
 
 RUN pip install pycryptodome
+
+RUN curl https://raw.githubusercontent.com/minaminao/dotfiles/master/.tmux.conf -o .tmux.conf
+RUN echo "tmux" >> .bashrc
