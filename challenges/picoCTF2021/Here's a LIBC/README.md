@@ -1,3 +1,7 @@
+## Description
+>I am once again asking for you to pwn this binary vuln libc.so.6 Makefile nc mercury.picoctf.net 49464
+
+## Writeup
 ```
 gef➤  checksec
 [+] checksec for '/home/pwn/challenges/picoCTF2021/Here's a LIBC/attachment/vuln'
