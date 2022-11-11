@@ -10,6 +10,7 @@
 | [picoCTF 2021: Here's a LIBC](challenges/picoCTF2021/Here's%20a%20LIBC/)                    | ROP, libc leak, one gadget                       |
 | [picoCTF 2022: buffer overflow 0](challenges/picoCTF2022/buffer%20overflow%200/)            | BOF                                              |
 | [picoCTF 2022: RPS](challenges/picoCTF2022/RPS/)                                            | `strstr`                                         |
+| [picoCTF 2022: ropfu](challenges/picoCTF2022/ropfu/)                                        | ROP, shellcode                                   |
 | [picoMini by redpwn: clutter-overflow](challenges/picoMini%20by%20redpwn/clutter-overflow/) | BOF                                              |
 | [ROP Emporium: 1. ret2win (x64)](challenges/ROPEmporium/1_ret2win-x64/)                     | ROP                                              |
 | [ROP Emporium: 2. split (x64)](challenges/ROPEmporium/2_split-x64/)                         | ROP, `system`                                    |
