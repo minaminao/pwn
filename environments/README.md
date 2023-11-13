@@ -3,7 +3,10 @@
 PwnをするときのDocker環境。
 
 ## Build
+
+リポジトリのルートディレクトリで実行する。
 約3分かかる。
+
 ```
 docker build -t pwn-ubuntu22.04 environments/ubuntu22.04/
 ```

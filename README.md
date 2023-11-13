@@ -25,5 +25,5 @@
 
 Note
 - BOF: Buffer Overflow
-- ROP: Return-oriented Programming
+- ROP: Return-Oriented Programming
 - UFS: Uncontrolled Format String
