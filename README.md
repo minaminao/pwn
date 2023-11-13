@@ -3,7 +3,7 @@
 ## Environments
 - [Ubuntu 22.04](environments/ubuntu22.04/Dockerfile)
 
-## Exploits
+## Solvers
 | Challenge (A-Z)                                                                             | Keyword                                                          |
 | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [Cyber Security Rumble 2022: pwnmeplx](challenges/CyberSecurityRumble2022/pwnmeplx/)        | ROP                                                              |
@@ -22,6 +22,7 @@
 | [ROP Emporium: 6. fluff (x64)](challenges/ROPEmporium/6_fluff-x64/)                         | ROP, write-what-where, `bextr`, `xlatb`, `stosb`                 |
 | [ROP Emporium: 7. pivot (x64)](challenges/ROPEmporium/7_pivot-x64/)                         | ROP, stack pivot                                                 |
 | [ROP Emporium: 8. ret2csu (x64)](challenges/ROPEmporium/8_ret2csu-x64/)                     | ROP, ret2csu                                                     |
+| [SECCON Beginners CTF 2023: poem](challenges/seccon-beginners-ctf-2023/poem/)               | negative value, array bounds                                     |
 
 Note
 - BOF: Buffer Overflow
