@@ -4,7 +4,7 @@
 - [Ubuntu 22.04](environments/ubuntu22.04/Dockerfile)
 
 ## Solvers
-| Challenge (A-Z)                                                                             | Keyword                                                          |
+| Challenge (A-Z)                                                                             | Keywords                                                         |
 | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [Cyber Security Rumble 2022: pwnmeplx](challenges/CyberSecurityRumble2022/pwnmeplx/)        | ROP                                                              |
 | [picoCTF 2021: Here's a LIBC](challenges/picoCTF2021/Here's%20a%20LIBC/)                    | ROP, libc leak, one gadget                                       |

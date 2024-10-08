@@ -42,7 +42,7 @@ RUN ~/radare2/sys/install.sh
 # TODO: https://github.com/hugsy/gef/issues/195
 ENV LC_CTYPE C.UTF-8
 # bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
-RUN bash -c "$(curl -fsS https://raw.githubusercontent.com/hugsy/gef/dev/scripts/gef.sh)" _ dev
+RUN bash -c "$(curl -fsS https://raw.githubusercontent.com/hugsy/gef/refs/heads/main/scripts/gef.sh)"
 
 # pwntools
 RUN pip install pwntools
