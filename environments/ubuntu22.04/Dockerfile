@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && apt install -y \
     curl \
@@ -40,13 +40,13 @@ RUN ~/radare2/sys/install.sh
 
 # GEF
 # TODO: https://github.com/hugsy/gef/issues/195
-ENV LC_CTYPE C.UTF-8
+ENV LC_CTYPE=C.UTF-8
 # bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 RUN bash -c "$(curl -fsS https://raw.githubusercontent.com/hugsy/gef/refs/heads/main/scripts/gef.sh)"
 
 # pwntools
 RUN pip install pwntools
-ENV PATH /home/pwn/.local/bin:$PATH
+ENV PATH=/home/pwn/.local/bin:$PATH
 
 # PyCryptodome
 RUN pip install pycryptodome
